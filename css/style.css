@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a7a5a5;
+    
+}
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 150px auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    max-width: 600px !important;
+    height: 430px;
+    border-radius: 5px;
+}
+
+.slide.active {
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button.prev {
+    left: -100px;
+}
+
+button.next {
+    right: -100px;
+}
